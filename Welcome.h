@@ -38,18 +38,18 @@ namespace Arcanoid {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	protected:
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-	private: System::Windows::Forms::Label^ txtFile;
 
-	private: System::Windows::Forms::Button^ btnPlay;
 
-	private: System::Windows::Forms::Button^ btnFile;
+
+
+
 
 
 	private:
 		/// <summary>
 		/// Wymagana zmienna projektanta.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -61,9 +61,6 @@ namespace Arcanoid {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Welcome::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->txtFile = (gcnew System::Windows::Forms::Label());
-			this->btnPlay = (gcnew System::Windows::Forms::Button());
-			this->btnFile = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -94,44 +91,12 @@ namespace Arcanoid {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &Welcome::PictureBox2_Click);
 			// 
-			// txtFile
-			// 
-			this->txtFile->AutoSize = true;
-			this->txtFile->Location = System::Drawing::Point(35, 255);
-			this->txtFile->Name = L"txtFile";
-			this->txtFile->Size = System::Drawing::Size(35, 13);
-			this->txtFile->TabIndex = 2;
-			this->txtFile->Text = L"label1";
-			// 
-			// btnPlay
-			// 
-			this->btnPlay->Location = System::Drawing::Point(550, 348);
-			this->btnPlay->Name = L"btnPlay";
-			this->btnPlay->Size = System::Drawing::Size(75, 23);
-			this->btnPlay->TabIndex = 3;
-			this->btnPlay->Text = L"start";
-			this->btnPlay->UseVisualStyleBackColor = true;
-			this->btnPlay->Click += gcnew System::EventHandler(this, &Welcome::Button1_Click);
-			// 
-			// btnFile
-			// 
-			this->btnFile->Location = System::Drawing::Point(550, 305);
-			this->btnFile->Name = L"btnFile";
-			this->btnFile->Size = System::Drawing::Size(75, 23);
-			this->btnFile->TabIndex = 4;
-			this->btnFile->Text = L"wybierz plik";
-			this->btnFile->UseVisualStyleBackColor = true;
-			this->btnFile->Click += gcnew System::EventHandler(this, &Welcome::Button2_Click);
-			// 
 			// Welcome
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(704, 501);
-			this->Controls->Add(this->btnFile);
-			this->Controls->Add(this->btnPlay);
-			this->Controls->Add(this->txtFile);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->MaximizeBox = false;
@@ -153,5 +118,5 @@ namespace Arcanoid {
 		Author^ author = gcnew Author;
 		author->ShowDialog();
 	}
-};
+	};
 }
